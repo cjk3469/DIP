@@ -1,0 +1,14 @@
+.id_input, .pwd_input {
+    padding: 10px 0px 25px 0px
+}
+.signup_form input{
+    width: 400px;
+    height: 30px;
+    padding: 25px 0px 25px 0px;
+    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+    -webkit-text-fill-color: rgb(0 0 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+}
