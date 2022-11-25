@@ -4,7 +4,7 @@ import NavItem from './NavItem';
 import { VscThreeBars, VscTriangleDown } from "react-icons/vsc";
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+function Nav() {
   const [categoryVisible, setVisible] =  useState(false);
   function handleMouseOver(){
     setVisible(true);
