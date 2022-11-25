@@ -31,7 +31,7 @@
     font-size: 30px;
     line-height: 28px;
     
-    color: #FFD910;
+    color: #000000;
 }
 #empty{
     flex-grow: 1;
@@ -39,24 +39,32 @@
 .search_input{
     height: 50px;
     border: none;
-    border-bottom: 1px solid #CCC;
+    -webkit-text-fill-color: rgb(129, 129, 129);
+    border-bottom: 1px solid rgb(129, 129, 129);
     background-color:  #ffffff;
     margin: 0px 16px;
     width: 100%;
-    max-width: 400px;   
+    max-width: 400px;
+    outline: none;
     
+}
+.search_input:focus{
+    border-bottom: 2px solid rgb(59, 59, 59);
+    -webkit-text-fill-color: rgb(59, 59, 59);
 }
 .login_btn{
     text-decoration: none;
-    background-color: rgb(255, 212, 0);
-    border-color: rgb(255, 212, 0);
-    color: rgb(48, 52, 65);
+    border: none;
+    background-color: #ffd910;
+    color: rgb(0, 0, 0);
     height: 42px;    
     width: 100px;
     margin: 20px;
-    border-radius: 4px;
-    font-weight: 500;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 20px;
     display: inline-flex;
+    font-family: 'Noto Sans KR', sans-serif;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;

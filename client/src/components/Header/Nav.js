@@ -19,8 +19,8 @@ function Nav() {
           <a href="/" className="title">Do It Proejct</a>
           <div id="empty"></div>
           <input className="search_input" placeholder="검색어를 입력하세요."/>
-          <Link to="/login"  className="login_btn">
-            <span>Login</span>
+          <Link to="/Signin"  className="login_btn">
+            <span>로그인</span>
           </Link>
         </section>
         <section className="nav_area">
@@ -33,7 +33,9 @@ function Nav() {
               <span className="category_title">전체 카테고리</span>
               <span><VscTriangleDown /></span>
             </button>
-            <div id="empty2"></div>
+            <div id="empty2"
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}></div>
             {categoryVisible ?  
             <div 
               className="NavItems" 
