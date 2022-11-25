@@ -1,6 +1,6 @@
 import { BiHomeAlt, BiChat, BiCategoryAlt } from "react-icons/bi";
 import { TbWorld, TbAlbum, TbMessageReport } from "react-icons/tb";
-const NavItem = (props) => {
+function NavItem(props) {
   return (
     <div className="NavItem">
       <span className="icon">{

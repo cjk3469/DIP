@@ -1,35 +1,35 @@
 import './Login.css';
 import GoogleLogin from './GoogleLogin';
-import { Link } from 'react-router-dom';
-const LogIn = () => {
+function LogIn() {
   return (
     <div className="login_frame">
     <div className="LogIn">
         <br/>
-        <p>Do it Proejct</p>
-        <form className="signin_form">
+        <p>Login</p>
+        <div className="TextField">
+            <div className="id_input">
+                <h3>아이디</h3>
                 <input
                     required
-                    label="email"
-                    type="text"
-                    placeholder = "이메일"
-                    autocomplete="off"
+                    label="아이디"
                 />
+            </div>
+            <div className="pwd_input">
+                <h3>비밀번호</h3>
                 <input
                     required
-                    label="password"
+                    label="비밀번호"
                     type="password"
-                    placeholder = "비밀번호"
-                    autocomplete="off"
                 />
-                <button className="btn">로그인</button>
-        </form>
+            </div>
+        </div>
         
+        <div className="SignIn_btn">
+            <button className="btn">로그인</button>
+        </div>
         <ul className="btns">
             <li className="SignUp">
-                <Link to="/signup" style={{ textDecoration: "none" }}>
-                    <a href="/Signup/Signup" class="look_link"> 회원가입 </a>
-                </Link>
+                <a href="/signup" class="look_link"> 회원가입 </a>
             </li>
             <li className="SignUp">
                 <a href="/signup" class="look_link"> 아이디 / 비밀번호 찾기 </a>

@@ -4,7 +4,6 @@ import Main from '../components/Main/Main';
 import NotFound from '../NotFound';
 import Nav from '../components/Header/Nav';
 import LogIn from '../components/Login/Login';
-import Signup from '../components/Login/Signup';
 import Lecture from '../components/Lecture/Lecture';
 import Setting from '../components/Setting/Setting';
 import Project from '../components/Project/Project';
@@ -23,7 +22,6 @@ const Router = () => {
 					<Route path="/" element={<Main />}></Route>
                     <Route path="/lecture" element={<Lecture />}></Route>
                     <Route path="/login" element={<LogIn />}></Route>
-					<Route path="/signup" element={<Signup />}></Route>
                     <Route path="/project" element={<Project />}></Route>
                     <Route path="/chat" element={<Chat />}></Route>
                     <Route path="/support" element={<Support />}></Route>
